@@ -1,0 +1,33 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<VBox fx:id="root" fx:controller="finalproject.Controller"
+      xmlns:fx="http://javafx.com/fxml" stylesheets="@style.css">
+    <HBox prefWidth="1920" prefHeight="1080">
+        <VBox id="menu" alignment="TOP_CENTER" >
+            <Text fill="black" textAlignment="CENTER">Analysis Select</Text>
+            <Button styleClass="commandButton" wrapText="true" text="Rating distribution by Prof" onAction="#displayRatingsByProfPage"></Button>
+            <Button styleClass="commandButton" wrapText="true" text="Prof Rating by School" onAction="#displayProfRatingsBySchoolPage"></Button>
+            <Button styleClass="commandButton" wrapText="true" text="Gender distribution by Keyword" onAction="#displayGenderByKeywordPage"></Button>
+            <Button styleClass="commandButton" wrapText="true" text="Rating distribution by Keyword" onAction="#displayRatingByKeywordPage"></Button>
+            <Button styleClass="commandButton" wrapText="true" text="Rating distribution by Gender" onAction="#displayRatingByGenderPage"></Button>
+        </VBox>
+        <VBox id="display">
+            <VBox id="graph" fx:id="graphPane" alignment="CENTER">
+            </VBox>
+            <VBox id="input" alignment="CENTER">
+                <HBox   style="-fx-spacing: 5" alignment="BOTTOM_CENTER">
+                    <Text style="-fx-padding: 5; -fx-margin:5" fill="black" textAlignment="JUSTIFY">Keyword: </Text>
+                    <TextField  style="-fx-padding: 3" fx:id="keywordInput"></TextField>
+                </HBox>
+            </VBox>
+        </VBox>
+    </HBox>
+</VBox>

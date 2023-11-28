@@ -1,0 +1,28 @@
+#menu {
+    -fx-pref-height: 1080;
+    -fx-pref-width: 400;
+    -fx-background-color: lightblue;
+    -fx-spacing: 10;
+    -fx-padding: 5;
+}
+
+#display {
+    -fx-pref-height: 1080;
+    -fx-pref-width: 1520;
+    -fx-background-color: lightgray;
+}
+
+#graph {
+    -fx-background-color: lightyellow;
+    -fx-pref-height: 800;
+    -fx-padding: 10,10,10,10;
+
+}
+
+#input {
+    -fx-pref-height: 280;
+}
+
+.commandButton {
+    -fx-pref-width: 390;
+}
